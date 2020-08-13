@@ -5,6 +5,7 @@ const StyledFriend = styled.div`
   width: 60%;
   display: flex;
   justify-content: space-between;
+  color: ${'royalblue'};
 `
 
 export default function Friend({ info, action, actionText }) {
