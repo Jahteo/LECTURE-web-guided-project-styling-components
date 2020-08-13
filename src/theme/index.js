@@ -7,7 +7,7 @@ const theme = {
   paddingMedium: '1.5',
   white: 'white',
   black: 'black',
-  tabletBreakpoint: '600px',
+  tabletBreakpoint: '400px',
   margins: {
     big: '3em',
     small: '0.5em',

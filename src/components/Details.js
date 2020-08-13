@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { BASE_URL, API_KEY } from '../constants'
 import axios from 'axios'
 
+
+// pull in the lib
+// OUTSIDE the Details function
+// create a StyledDetails
+// supplanat the top-level div with it
+
 export default function Details(props) {
   const { friendId, close } = props
   const [details, setDetails] = useState(null)
