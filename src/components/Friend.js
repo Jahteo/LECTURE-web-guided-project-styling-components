@@ -10,7 +10,10 @@ const StyledFriend = styled.div`
 
   button {
     background-color: ${props => props.theme.secondaryColor};
-    color: ${props => props.theme.white};
+    color: ${props => {
+      const { theme } = props;
+      return theme.white;
+    }};
 
     &:hover {
       transform: scale(1.3);
