@@ -6,6 +6,7 @@ const StyledFriend = styled.div`
   display: flex;
   justify-content: space-between;
   color: ${props => props.theme.primaryColor};
+  margin: ${props => props.theme.margins.small};
 `
 
 export default function Friend({ info, action, actionText }) {

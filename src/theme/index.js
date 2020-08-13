@@ -10,7 +10,7 @@ const theme = {
   tabletBreakpoint: '600px',
   margins: {
     big: '3em',
-    small: '1em',
+    small: '0.5em',
   }
 }
 
