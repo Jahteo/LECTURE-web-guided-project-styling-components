@@ -7,7 +7,6 @@ const StyledFriend = styled.div`
   justify-content: space-between;
   color: ${props => props.color || props.theme.primaryColor};
   margin: ${props => props.theme.margins.small};
-  background-color: ${props => props.color ? props.color : 'green'};
 
   @media (max-width: ${props => props.theme.tabletBreakpoint}) {
     width: 100%;
@@ -29,9 +28,9 @@ const StyledFriend = styled.div`
   }
 `
 
-export default function Friend({ info, action, actionText }) {
+export default function Friend({ big, info, action, actionText }) {
   return (
-    <StyledFriend color='purple'>
+    <StyledFriend >
       {info.name}
       <button onClick={() => action(info.id)}>
         {actionText}
