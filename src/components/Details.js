@@ -60,8 +60,16 @@ import styled, { keyframes } from 'styled-components'
 // }
 // `
 
-let StyledDetails = styled.div`
-  h2{
+const kf = keyframes`
+  100% {
+    opacity: 1;
+  }
+`
+
+const StyledDetails = styled.div`
+  opacity: 0;
+  animation: ${kf}
+  h2 {
     font-size: 3rem;
     background: ${ () => {
       let hex = () => Math.floor(Math.random()*255).toString(16);
