@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { BASE_URL, API_KEY } from '../constants'
 import axios from 'axios'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 
 // pull in the lib
