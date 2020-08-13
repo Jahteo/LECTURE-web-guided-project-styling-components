@@ -1,13 +1,17 @@
 import React from 'react'
+import styled from 'styled-components'
 
-export default function Friend(props) {
-  const { info, action, actionText } = props
+const StyledFriend = styled.div`
+
+`
+
+export default function Friend({ info, action, actionText }) {
   return (
-    <div className='friend'>
+    <StyledFriend className='friend'>
       {info.name}
       <button onClick={() => action(info.id)}>
         {actionText}
       </button>
-    </div>
+    </StyledFriend>
   )
 }
