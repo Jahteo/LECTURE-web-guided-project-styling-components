@@ -8,11 +8,66 @@ import styled from 'styled-components'
 // OUTSIDE the Details function
 // create a StyledDetails
 // supplanat the top-level div with it
-const StyledDetails = styled.div`
-  background-color: ${props => props.color || 'initial'};
-  font-family: monospace;
-  button {
-    background-color: red;
+// const StyledDetails = styled.div`
+//   background-color: ${props => props.color || 'initial'};
+//   font-family: monospace;
+//   button {
+//     background-color: red;
+//   }
+// `
+
+// const StyledDetails = styled.div`
+//   border: 1px solid #d2d2d2;
+//   box-shadow: 0px 1px 6px -2px #807f7f;
+//   border-radius: 8px;
+//   margin-top: 16px;
+//   padding: 16px;
+//   background-color: purple;
+//   color: red;
+//   button {
+//     background-color: yellow;
+//     transition: all 0.25s ease-in-out;
+//     &:hover: {
+//       transition: all 0.25s ease-in-out;
+//       transform: scale(2);
+//     }
+//   }
+// `
+
+// const StyledDetails = styled.div`
+// border: 1px solid #d2d2d2;
+// box-shadow: 0px 1px 6px -2px #807f7f;
+// border-radius: 8px;
+// margin-top: 16px;
+// padding: 16px;
+// color: teal;
+// background-color: pink;
+// border: 12px orange dotted;
+// font-size: 2rem;
+// font-family: sans-serif;
+// :hover{
+//   color: purple;
+// }
+// button{
+//   font-size: 48px;
+//   width: 50%;
+//   margin: 0% 25%;
+//   color: orange;
+//   background-color: teal;
+//   :hover{
+//     color: gold;
+//   }
+// }
+// `
+
+let StyledDetails = styled.div`
+  h2{
+    font-size: 3rem;
+    background: ${ () => {
+      let hex = () => Math.floor(Math.random()*255).toString(16);
+      console.log(hex());
+      return '#'+hex()+hex()+hex()
+    }};
   }
 `
 
