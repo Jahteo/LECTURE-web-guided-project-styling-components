@@ -68,7 +68,7 @@ const kf = keyframes`
 
 const StyledDetails = styled.div`
   opacity: 0;
-  animation: ${kf}
+  animation: ${kf} 1s ease-in-out forwards;
   h2 {
     font-size: 3rem;
     background: ${ () => {
