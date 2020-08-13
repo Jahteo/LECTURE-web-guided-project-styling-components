@@ -7,7 +7,7 @@ const StyledFriend = styled.div`
 
 export default function Friend({ info, action, actionText }) {
   return (
-    <StyledFriend className='friend'>
+    <StyledFriend>
       {info.name}
       <button onClick={() => action(info.id)}>
         {actionText}
