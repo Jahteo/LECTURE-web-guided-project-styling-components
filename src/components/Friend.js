@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Friend({ info, action }) {
+export default function Friend({ info, action, actionText }) {
   return (
     <div className='friend'>
       {info.name}
       <button onClick={() => action(info.id)}>
-        See details
+        {actionText}
       </button>
     </div>
   )
