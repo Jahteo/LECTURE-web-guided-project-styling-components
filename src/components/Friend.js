@@ -8,6 +8,10 @@ const StyledFriend = styled.div`
   color: ${props => props.theme.primaryColor};
   margin: ${props => props.theme.margins.small};
 
+  @media (max-width: ${props => props.theme.tabletBreakpoint}) {
+    width: 100%;
+  }
+
   button {
     background-color: ${props => props.theme.secondaryColor};
     color: ${props => {
