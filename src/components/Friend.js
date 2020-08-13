@@ -7,6 +7,7 @@ const StyledFriend = styled.div`
   justify-content: space-between;
   color: ${props => props.color || props.theme.primaryColor};
   margin: ${props => props.theme.margins.small};
+  font-size: ${props => props.big ? '2em' : '1em'};
 
   @media (max-width: ${props => props.theme.tabletBreakpoint}) {
     width: 100%;
@@ -30,7 +31,7 @@ const StyledFriend = styled.div`
 
 export default function Friend({ big, info, action, actionText }) {
   return (
-    <StyledFriend >
+    <StyledFriend big={big}>
       {info.name}
       <button onClick={() => action(info.id)}>
         {actionText}
