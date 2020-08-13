@@ -8,6 +8,10 @@ const theme = {
   white: 'white',
   black: 'black',
   tabletBreakpoint: '600px',
+  margins: {
+    big: '3em',
+    small: '1em',
+  }
 }
 
 export default theme
