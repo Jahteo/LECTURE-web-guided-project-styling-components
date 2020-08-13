@@ -1,12 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { BASE_URL, API_KEY } from '../constants'
 import axios from 'axios'
+import styled from 'styled-components'
 
 
 // pull in the lib
 // OUTSIDE the Details function
 // create a StyledDetails
 // supplanat the top-level div with it
+const StyledDetails = styled.div`
+  background-color: ${props => props.color || 'initial'};
+  font-family: monospace;
+  button {
+    background-color: red;
+  }
+`
 
 export default function Details(props) {
   const { friendId, close } = props
@@ -19,7 +27,7 @@ export default function Details(props) {
   }, [friendId])
 
   return (
-    <div className='container'>
+    <StyledDetails color='yellow' className='container'>
       <h2>Details:</h2>
       {
         details &&
@@ -35,6 +43,6 @@ export default function Details(props) {
         </>
       }
       <button onClick={close}>Close</button>
-    </div>
+    </StyledDetails>
   )
 }
