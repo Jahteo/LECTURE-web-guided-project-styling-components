@@ -15,7 +15,10 @@ const StyledFriend = styled.div`
       return theme.white;
     }};
 
+    transition: all 0.5s ease-in-out;
+
     &:hover {
+      transition: all 0.5s ease-in-out;
       transform: scale(1.3);
     }
   }
